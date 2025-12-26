@@ -30,6 +30,7 @@ header h2 {
 .form-container {
     background-color: #646464;
     text-align: center;
+    min-height: 4.2vh;
 }
 
 .search {
@@ -48,11 +49,11 @@ header h2 {
 }
 
 .results {
-    min-height: 80vh;
+    min-height: 71.3vh;
 }
 
 .watchlist {
-    min-height: 86vh;
+    min-height: 75.5vh;
 }
 
 .results i {
@@ -60,7 +61,7 @@ header h2 {
 }
 
 .no-search, .no-watchlist {
-    padding: 205px 0;
+    padding: 205px 0 0;
     text-align: center;
     color: #2e2e2f;
 }
