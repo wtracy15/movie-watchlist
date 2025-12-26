@@ -1,0 +1,150 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    padding: 50px 42px;
+    height: 14vh;
+    background-image: url("header.png");
+    background-size: cover;
+    background-color: #121212;
+    opacity: 80%;
+    font-family: Inter;
+    color: whitesmoke;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header h1 {
+    font-weight: 800;
+    font-size: 42px;
+}
+
+header h2 {
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.form-container {
+    background-color: #646464;
+    text-align: center;
+}
+
+.search {
+    background-color: #2e2e2e;
+    border: none;
+    border-radius: 5px;
+    color: #a5a5a5;
+    padding: 5px 10px;
+}
+
+.results, .watchlist {
+    background-color: #121212;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+}
+
+.results {
+    min-height: 80vh;
+}
+
+.watchlist {
+    min-height: 86vh;
+}
+
+.results i {
+    font-size: 60px;
+}
+
+.no-search, .no-watchlist {
+    padding: 205px 0;
+    text-align: center;
+    color: #2e2e2f;
+}
+
+.movie {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 50px 0;
+    border-bottom: solid 1px #2c2c2c;
+    margin: 0 50px;
+}
+
+.movie img {
+    height: 200px;
+    max-width: 145px;
+}
+
+.imdb-rating {
+    font-size: 16px;
+}
+
+.info-bar p, .add-watchlist {
+    display: inline;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.genre, .add-watchlist {
+    margin: 0 5px;
+}
+
+.runtime {
+    margin: 0 5px 0 0;
+}
+
+.title {
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+.title span {
+    font-size: 12px;
+}
+
+.plot {
+    font-size: 0.75rem;
+    color: #a5a5a5
+}
+
+.add-watchlist-btn, .remove-watchlist-btn {
+    background-color: inherit;
+    color: inherit;
+    border: inherit;
+    padding: inherit;
+    font-size: 12px;
+}
+
+.plus, .minus {
+    background-color: white;
+    color: black;
+    border-radius: 50%;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.plus {
+    padding: 0 4px;
+}
+
+.minus {
+    padding: 0 5px;
+}
+
+.watchlist-btn, .search-btn {
+    color: inherit;
+    border: inherit;
+    background-color: transparent;
+    font-family: inherit;
+}
+
+.add-watchlist-btn:hover, 
+.remove-watchlist-btn:hover,
+.watchlist-btn:hover, 
+.search-btn {
+    cursor: pointer;
+}
