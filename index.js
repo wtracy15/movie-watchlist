@@ -24,7 +24,10 @@ form.addEventListener('submit', function(e){
                 fetch(`https://www.omdbapi.com/?apikey=28e890e6&i=${result.imdbID}`)
                     .then(res => res.json())
                     .then(imdbData => {
-                        const watchlist = JSON.parse(localStorage.getItem('watchlist'))
+                        let watchlist = JSON.parse(localStorage.getItem('watchlist'))
+                        if (watchlist === null){
+                            watchlist = []
+                        }
                         resultsHtml += `
                             <div class="movie" id=${result.imdbID}>
                                 <img class="poster" src=${result.Poster}>
@@ -54,7 +57,6 @@ form.addEventListener('submit', function(e){
 })
 
 function addMovieToWatchlist(target){
-    //TODO: Add IDs for elements
     
     
     const watchlistRaw = localStorage.getItem('watchlist');
