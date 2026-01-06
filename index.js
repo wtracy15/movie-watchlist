@@ -16,12 +16,12 @@ form.addEventListener('submit', function(e){
     e.preventDefault()
     const search = searchInput.value
     
-    fetch(`https://www.omdbapi.com/?apikey=28e890e6&s=${search}`)
+    fetch(`https://www.omdbapi.com/?apikey=XXXXXXXXX=${search}`)
         .then(res => res.json())
         .then(data => {
             let resultsHtml = ''
             data.Search.forEach(result => {
-                fetch(`https://www.omdbapi.com/?apikey=28e890e6&i=${result.imdbID}`)
+                fetch(`https://www.omdbapi.com/?apikey=XXXXXXXXX=${result.imdbID}`)
                     .then(res => res.json())
                     .then(imdbData => {
                         let watchlist = JSON.parse(localStorage.getItem('watchlist'))
